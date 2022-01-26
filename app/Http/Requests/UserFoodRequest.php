@@ -13,7 +13,7 @@ class UserFoodRequest extends FormRequest
      */
     public function authorize()
     {
-        return request()->input("user_id") === auth()->user()->id;
+        return true;
     }
 
     /**
